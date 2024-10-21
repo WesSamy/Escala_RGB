@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(190, 190, 190);
+}
+.titulo{
+    margin: auto;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-left: 35%;
+}
+
+#container{
+    height: 60px;
+    margin-top: 150px;
+    font-size: 30px;
+    margin-left: 250px;
+}
+
+.red{
+    -webkit-appearance: none; /* Remove o estilo padrão no Chrome/Safari */
+    width:50%;   /*largura da barra*/
+     height: 10px; /* Altura da barra */
+    background: #eb0808; /* Cor de fundo da barra */
+    border-radius: 5px; /* Bordas arredondadas */
+     margin-left: 2%;
+    cursor: pointer;
+}
+
+.green{
+    -webkit-appearance: none; 
+    width:50%;
+    height: 10px; 
+    background: #027c12; 
+    border-radius: 5px; 
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.blue{
+    -webkit-appearance: none; 
+    width:50%;
+    height: 10px; 
+    background: #0227ce; 
+    border-radius: 5px; 
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.circulo{
+    display: flex;
+    justify-content: center; /*Centraliza o Circulo*/
+    margin: auto;
+    width: 300px; /* Largura da forma */
+    height: 300px; /* Altura da forma */
+    background-color: #000000; /* Cor de fundo padrão */
+    border-radius: 50%; /* Faz a forma ficar circular */
+    margin-top: 15%;
+    
+}

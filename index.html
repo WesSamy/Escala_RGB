@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <title>Escala RGB</title>
+</head>
+<body>
+    <h1 class="titulo">ESCALA RGB</h1>
+    
+    <!-- ID para realizar modificações no JavaScript-->
+    <div id="container">
+        <!--Coloca a bolinha no inicio = min="0" max="100" value="0"-->
+        <div>
+            <h3>(R) Vermelho<input class="red" type="range" min="0" max="255" value="0">
+            <span id="valorR">0</span></h3>
+        </div>
+            <br>
+
+         <div>                                             
+            <h3>(G) Verde<input class="green" type="range" min="0" max="255" value="0">
+            <span id="valorG">0</span></h3>
+        </div>
+
+            <br> 
+        <div>
+            <h3>(B) Azul<input class="blue" type="range" min="0" max="255" value="0">
+            <span id="valorB">0</span></h3>
+        </div>
+    
+    </div>
+
+    <div class="circulo"></div>
+</body>
+</html>
