@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(190, 190, 190);
+    background-color: #22cc1c;
+    background-image: linear-gradient(#236cc0, #0cc6e7);
 }
 .titulo{
     margin: auto;
@@ -50,14 +51,64 @@ body{
     cursor: pointer;
 }
 
-.circulo{
+.formas{
     display: flex;
-    justify-content: center; /*Centraliza o Circulo*/
-    margin: auto;
+}
+
+.quadrado{
+    display: flex;
+    /* justify-content: center; /*Centraliza o Circulo*/
+    
     width: 300px; /* Largura da forma */
     height: 300px; /* Altura da forma */
     background-color: #000000; /* Cor de fundo padrão */
-    border-radius: 50%; /* Faz a forma ficar circular */
-    margin-top: 15%;
+    margin-top: 225px;    
+    border: 5px double red; /* permite que eu coloque uma borda em volta do elemento*/
+    transform-style: calc(75px 50px 300px);
+}
+
+
+.circulo{
+    display: flex;
+    /* justify-content: center; /*Centraliza o Circulo*/
     
+    width: 300px; /* Largura da forma */
+    height: 300px; /* Altura da forma */
+    background-color: #000000; /* Cor de fundo padrão */
+    border-radius: 100%; /* Faz a forma ficar circular */
+    margin-top: 225px;    
+    border: 5px double red; /* permite que eu coloque uma borda em volta do elemento*/
+    transform-style: calc(75px 50px 300px);
+}
+
+.triangulo {
+    width: 300px; /* Largura da forma */
+    height: 300px; /* Altura da forma */
+    background-color: #000000; /* Cor de fundo padrão */
+    clip-path: polygon(50% 0%, 0% 100%,100% 100%);
+    margin-top: 225px;    
+
+}
+
+.loganzo {
+    width: 450px; /* Largura da forma */
+    height: 300px; /* Altura da forma */
+    background-color: #000000; /* Cor de fundo padrão */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin-top: 225px;    
+   
+}
+
+
+
+
+@media (max-width: 600px) {
+    .loganzo {
+      background-color: #FF0000;
+    }
+
+    .formas{
+        display: flex;
+        flex-direction: column;
+    }
 }

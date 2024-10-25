@@ -9,6 +9,9 @@ const valorR = document.getElementById('valorR');
 const valorG = document.getElementById('valorG');
 const valorB = document.getElementById('valorB');
 const circulo = document.querySelector('.circulo');
+const triangulo = document.querySelector('.triangulo');
+const quadrado = document.querySelector('.quadrado');
+const loganzo = document.querySelector('.loganzo');
 
 // Função para atualizar a cor do círculo
 function atualizarCor() {
@@ -24,7 +27,10 @@ function atualizarCor() {
     valorB.textContent = b;
 
     // Define a cor do círculo
+    triangulo.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
     circulo.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    quadrado.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    loganzo.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
     // caso eu queira que o fundo do meu site mude de cor 
     //document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
