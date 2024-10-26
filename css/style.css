@@ -6,6 +6,7 @@
 body{
     background-color: #22cc1c;
     background-image: linear-gradient(#236cc0, #0cc6e7);
+    height: 100vh;/* permite que meu background fique no tamanho do meu site (OBS => em telas cheias)*/
 }
 .titulo{
     margin: auto;
@@ -111,6 +112,10 @@ body{
     .formas{
         display: flex;
         flex-direction: column;
+    }
+
+    body{
+        height: 100% ;
     }
 }
 /* justify-content => ajusta os elemento na horizontal*/
