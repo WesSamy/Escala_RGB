@@ -62,7 +62,8 @@ body{
     width: 300px; /* Largura da forma */
     height: 300px; /* Altura da forma */
     background-color: #000000; /* Cor de fundo padrão */
-    margin-top: 225px;    
+    margin-top: 225px;  
+    margin-left: 30px;  
     border: 5px double red; /* permite que eu coloque uma borda em volta do elemento*/
     transform-style: calc(75px 50px 300px);
 }
@@ -76,7 +77,8 @@ body{
     height: 300px; /* Altura da forma */
     background-color: #000000; /* Cor de fundo padrão */
     border-radius: 100%; /* Faz a forma ficar circular */
-    margin-top: 225px;    
+    margin-top: 225px; 
+    margin-left: 30px;   
     border: 5px double red; /* permite que eu coloque uma borda em volta do elemento*/
     transform-style: calc(75px 50px 300px);
 }
@@ -96,7 +98,6 @@ body{
     background-color: #000000; /* Cor de fundo padrão */
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     margin-top: 225px;    
-   
 }
 
 
@@ -112,3 +113,6 @@ body{
         flex-direction: column;
     }
 }
+/* justify-content => ajusta os elemento na horizontal*/
+/* align-items => ajusta os elemento na vertical*/
+/* (defer) no script do JS => INFORMA O NAVEGADOR QUE ELE PRECISA ESPERAR O HTML CARREGA PARA DEPOIS CARREGAR O JAVASCRIPT*/
